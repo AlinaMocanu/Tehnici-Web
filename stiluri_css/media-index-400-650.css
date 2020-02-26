@@ -1,0 +1,73 @@
+.flex-container,.flex-container2{
+		justify-content:flex-start;
+	}
+	
+table#tabrep,table#tabrep tr{
+		border:none;
+		padding:0;
+		margin:0;
+		display:block;
+	}
+	
+table#tabrep td{
+		display:block;
+		padding:0.2em;
+		box-sizing:border-box;
+	}
+	
+table#tabrep thead{
+		display:none;
+	}
+	
+table#tabrep tbody td:nth-child(1)::before{
+		content:"Capitol: ";
+	}
+	
+table#tabrep tbody td:nth-child(2)::before{
+		content:"Teoria conspirationista: ";
+	}
+	
+table#tabrep tbody td:nth-child(3)::before{
+		content:"Dovedita";	
+	}
+	
+table#tabrep tbody td:nth-child(4)::before{
+		content:"Nedovetita";
+    }
+	
+table#tabrep tbody td:nth-child(5)::before{
+	    content:"Dovedita partial";
+    }
+	
+table#tabrep td{
+		border-bottom:none;
+		border-top:none;
+		background-color:AntiqueWhite;
+		float:left;
+		width:80%;
+		padding-left:2%;
+		padding-right:2%;
+	}
+		
+table#tabrep td::before{
+		float:left;
+		width:65%;
+		background:lightgrey;
+		font-weight:bold;
+		margin-right:0.5em;
+		padding:0.1em;
+		line-height:100%;
+	}
+	
+table#tabrep td:last-child{
+		border-bottom:1px dashed grey;
+	}
+	
+table#tabrep tr:first-child  td:first-child{
+		border-top:1px solid black;
+	}
+	
+table#tabrep tr:last-child td:last-child{
+		border-bottom:1px solid black;
+    }
+		

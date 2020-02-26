@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="utf-8" />
+		<title>Comunitate</title>
+		
+		<link rel ="stylesheet" href ="../stiluri_css/stil_general.css" type = "text/css"/>
+	</head>
+	<body>
+	<header>
+	<%- include("../fragmente/header") %>
+	</header>
+	 <div class="afisaj">
+        <h1>Membrii discutiei</h1>
+    </div>
+	<table>
+	  <tr>
+		<th>id</th><th>Username</th><th>Email</th>
+	  </tr>
+	  <% for (var i = 0; i < useri.length; i++) { %>
+		<tr>
+		  <td><%= useri[i].id %></td>
+		  <td><%= useri[i].username %></td>
+		  <td><%= useri[i].email %></td>
+		</tr>    
+	  <% } %>
+	</table>
+	</body>
+</html>

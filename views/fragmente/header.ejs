@@ -1,0 +1,49 @@
+<nav class="wrapper">
+					<ul class="menu">
+						<li><a href="/index">Pagina principala</a></li>
+						<li>
+							<div>Guvernul american</div>
+							<ul class="submenu">
+								<li><a href="/guvernulAmerican#illuminati">Guvernul american</a></li>
+								<li><a href="/guvernulAmerican#ufo">UFOs</a></li>
+							</ul>
+						</li>
+						<li>
+							<div>Clienti, beneficiari sau doar cobai?</div>
+							<ul class="submenu">
+								<li><a href="/federalReserve#federal">Federal Reserve</a></li>
+								<li><a href="/federalReserve#fb">Facebook</a></li>
+							</ul>
+						</li>
+						<li>
+							<div>Asasinari si disparitii istorice</div>
+							<ul class="submenu">
+								<li><a href="/asasinariCelebre#kennedy">Asasinarea presedintelui american John F. Kennedy</a></li>
+								<li><a href="/asasinariCelebre#mccartney">Moartea lui Paul McCartney</a></li>
+							</ul>
+						</li>
+						<li>
+							<div>Evenimente colosale pentru evolutia omenirii-un mit?</div>
+							<ul class="submenu">
+								<li><a href="/evenimenteEsentiale#luna">Care a fost de fapt primul om pe luna?</a></li>
+								<li><a href="/evenimenteEsentiale#davinci">Codul lui Da Vinci</a></li>
+							</ul>
+						</li>
+						<li>
+							<div>Comunitate</div>
+							<ul class="submenu">
+								<li><a href="/forum">Forum</a></li>
+								<li><a href="/register">Register</a></li>
+								<li><a href="/login">Login</a></li>
+							</ul>
+						</li>
+						<% if(locals.user){ %>
+								<li><a href="/logout">Logout</a></li>
+								<li><a href="/useri">Membrii comunitatii</a></li>
+			            <% } %>
+			
+					</ul>
+ </nav>
+ <% if(locals.user){ %>
+		<p class="salut"><br></br>Salut,<br/><%= user.username %></p>
+	<% } %>

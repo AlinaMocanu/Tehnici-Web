@@ -1,0 +1,97 @@
+th,td{
+    border:0.1em solid black;
+    padding:0.25em;
+	font-family:'Inconsolata', monospace;
+    }
+
+td:empty{
+    padding:1em;
+    }
+	
+table{
+	border-collapse:collapse;
+    empty-cells:show;
+	width:70%;
+    }
+	
+th{
+	background-color:DarkSlateGray;
+	background-image: radial-gradient(DimGray, DarkSlateGray, CadetBlue);
+	}
+	
+td:hover {
+	background-color:skyblue;
+    transition:background 2s linear;
+	}
+	
+tr:nth-child(even) {
+	background-color:gray;
+    background-image:linear-gradient(to right, Gainsboro, gray);
+	}
+	
+tr:nth-child(odd) {
+	background-color:silver;
+    background-image:linear-gradient(-90deg, LightGoldenRodYellow, silver);
+	}
+	
+body {
+	counter-reset:section;
+	}
+
+h2 {
+	counter-reset:subsection;
+	color:black;
+	}
+
+h2::before {
+	counter-increment:section;
+	content:"Sectiunea " counter(section) ". ";
+	color:black;
+	}
+
+h3::before {
+	counter-increment:subsection;
+	content:counter(section) "." counter(subsection) " ";
+	color:blue;
+	}
+	
+img{
+	transition:transform 2s;
+	}
+img:hover{
+	transform:rotate(2180deg);
+	}
+
+.flex-container,.flex-container2,.flex-container3 {
+    display:flex;
+    flex-direction:row;
+    padding-top:1em;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    }
+
+ .flex-item2,.flex-item3,.flex-item{
+    width:300px;
+    text-align:left;
+    }
+   
+.fa {
+	padding:20px;
+	font-size:30px;
+	width:50px;
+	text-align:center;
+	text-decoration:none;
+	margin:5px 2px;
+	border-radius:50%;
+	}
+.fa:hover {
+    opacity: 0.7;
+	}
+
+.fa-facebook {
+	background:#3B5998;
+	color:white;
+	}
+
+
+
